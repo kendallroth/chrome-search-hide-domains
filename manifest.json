@@ -1,0 +1,30 @@
+{
+  "name": "Hide Domains From Search",
+  "description": "Hide unwanted domains while searching with Google!",
+  "version": "0.1",
+  "manifest_version": 3,
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "permissions": [
+    "storage",
+    "webRequest"
+  ],
+  "omnibox": {
+    "keyword": "krhide"
+  },
+  "action": {
+    "default_popup": "pages/popup.html",
+    "default_icon": {
+      "24": "/images/logo-24.png",
+      "48": "/images/logo-48.png"
+    }
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "icons": {
+    "24": "/images/logo-24.png",
+    "48": "/images/logo-48.png"
+  }
+}
